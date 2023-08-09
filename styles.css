@@ -1,0 +1,88 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'League Spartan', sans-serif;
+}
+.wrapper{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background-color: #282c2f; */
+}
+.container{
+    width: 80%;
+    max-width: 460px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    background-color: #33393e;
+    align-items: center;
+    border-radius: 2rem;
+    box-shadow: 15px 15px 20px rgba(0,0,0,0.25),-15px -15px 20px rgba(225,225,225,0.1);
+
+}
+.displayscreen{
+    width: 85%;
+    font-size: 2.5rem;
+    font-weight: 700;
+    line-height: 50px;
+    letter-spacing: 1px;
+    padding: 0.5rem 0.6rem;
+    border: none;
+    border-radius: 0.9rem;
+    margin-top: 3rem;
+    margin-bottom: 1.5rem;
+    background: #33393e;
+    box-shadow: inset 15px 15px 20px rgba(0,0,0,0.5),inset -15px -15px 20px rgba(225,225,225,0.1);
+    color: #eee;
+    padding-top: 1rem;
+}
+.displayscreen::placeholder{
+    font-weight: 500;
+    font-size: 2.5rem;
+}
+.mainbox{
+    display: grid;
+    width: 85%;
+    height: 100%;
+    grid-template-columns: repeat(4,1fr);
+    gap: 1.2rem;
+    grid-template-rows: repeat(6,1fr);
+    margin-bottom: 3rem;
+
+}
+
+.mainbox button{
+    border-radius: 10px;
+    min-height: 60px;
+    cursor: pointer;
+    font-size: 1.9rem;
+    font-weight: 500;
+    color: #eee;
+    background: #33393e;
+    border: 2px solid #333;
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.25),-5px -5px 10px rgba(225,225,225,0.1);
+
+
+    
+}
+#equalbtn{
+    grid-column-start: 4;
+    grid-row-start: 5;
+    grid-row-end: 7;
+    background: rgb(4, 183, 4);
+}
+.mainbox button:active{
+    box-shadow: inset 5px 5px 10px rgba(0,0,0,0.25),inset -5px -5px 10px rgba(225,225,225,0.1);
+}
+#ac{
+    background: rgb(42, 42, 251);
+}
+#del{
+    background: rgb(255, 50, 50);
+}
+
